@@ -14,8 +14,10 @@ public class Kadai0204 {
     文字数より多い数が指定された場合、"error"と出力
      */
     static void deleteList(int n){
-        if(n == imitationList.length())
+        if(n > imitationList.length())
             imitationList = "error";
+        else if(n == imitationList.length())
+        	imitationList = "すべて削除されました";
         else
             imitationList = imitationList.substring(n,imitationList.length());
     }
